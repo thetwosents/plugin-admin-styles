@@ -22,6 +22,9 @@ html {
         letter-spacing: 1px;
         font-size: $basefontsize;
       }
+      .ab-item {
+        font-family: 'Josefin Sans', sans-serif !important;
+      }
       span {
         &::before {
           display: none;
