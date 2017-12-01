@@ -45,12 +45,16 @@ html body #adminmenuwrap {
   html body #adminmenuwrap #adminmenu {
     background: #0d274a;
     width: 240px; }
+    html body #adminmenuwrap #adminmenu .wp-menu-separator {
+      display: none; }
     html body #adminmenuwrap #adminmenu li {
       padding-left: 20px; }
       html body #adminmenuwrap #adminmenu li:hover a {
         color: #fff; }
       html body #adminmenuwrap #adminmenu li li {
         padding-left: 0px; }
+        html body #adminmenuwrap #adminmenu li li:hover a {
+          color: #fff; }
       html body #adminmenuwrap #adminmenu li a {
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -64,18 +68,27 @@ html body #adminmenuwrap {
           background: #0d274a; }
       html body #adminmenuwrap #adminmenu li.wp-has-submenu .wp-submenu {
         left: 240px; }
-      html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu {
-        width: 200px;
-        left: 0px; }
-        html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu a {
+        html body #adminmenuwrap #adminmenu li.wp-has-submenu .wp-submenu a {
           color: #98a5b2; }
-          html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu a.current {
+          html body #adminmenuwrap #adminmenu li.wp-has-submenu .wp-submenu a:hover {
             color: #fff; }
-      html body #adminmenuwrap #adminmenu li.wp-has-current-submenu a {
-        background: #0a213c;
-        color: #fff; }
-      html body #adminmenuwrap #adminmenu li.wp-has-current-submenu:hover {
-        background: #0d274a; }
+      html body #adminmenuwrap #adminmenu li.wp-has-current-submenu {
+        background: #0a213c; }
+        html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu {
+          width: 200px;
+          left: 0px;
+          background: #0a213c; }
+          html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu li a {
+            background: #0a213c; }
+          html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu a {
+            color: #98a5b2; }
+            html body #adminmenuwrap #adminmenu li.wp-has-current-submenu .wp-submenu a.current {
+              color: #fff; }
+        html body #adminmenuwrap #adminmenu li.wp-has-current-submenu a {
+          background: #0a213c;
+          color: #fff; }
+        html body #adminmenuwrap #adminmenu li.wp-has-current-submenu:hover {
+          background: #0a213c; }
 html body #wpcontent {
   margin-left: 240px; }
   html body #wpcontent a {

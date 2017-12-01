@@ -97,6 +97,9 @@ html {
       #adminmenu {
         background: $base;
         width: $sidebarwidth;
+        .wp-menu-separator {
+          display: none;
+        }
         li {
           padding-left: 20px;
           &:hover {
@@ -106,6 +109,11 @@ html {
           }
           li {
             padding-left: 0px;
+            &:hover {
+              a {
+                color: #fff;
+              }
+            }
           }
           a {
             text-transform: uppercase;
@@ -127,13 +135,25 @@ html {
           &.wp-has-submenu {
             .wp-submenu {
               left: $sidebarwidth;
+              a {
+                color: $pale;
+                &:hover {
+                  color: #fff;
+                }
+              }
             }
           }
           &.wp-has-current-submenu {
-            // background: $dark;
+            background: $dark;
             .wp-submenu {
               width: 200px;
               left: 0px;
+              background: $dark;
+              li {
+                a {
+                  background: $dark;
+                }
+              }
               a {
                 color: $pale;
                 &.current {
@@ -146,7 +166,7 @@ html {
               color: #fff;
             }
             &:hover {
-              background: $base;
+              background: $dark;
             }
           }
         }
