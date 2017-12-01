@@ -16,14 +16,11 @@ html {
     }
     #wpadminbar {
       background: $base;
-      a, span {
+      a, span, .ab-item {
         font-family: 'Josefin Sans', sans-serif !important;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: $basefontsize;
-      }
-      .ab-item {
-        font-family: 'Josefin Sans', sans-serif !important;
       }
       span {
         &::before {
