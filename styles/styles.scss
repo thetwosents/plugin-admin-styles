@@ -174,6 +174,30 @@ html {
     }
     #wpcontent {
       margin-left: $sidebarwidth;
+      .row-actions {
+        left: 0px !important;
+        font-size: 10px !important;
+        display: block !important;
+      }
+      .thumbnail {
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        opacity: .6;
+        &:hover {
+          opacity: 1;
+          box-shadow: 0px 4px 16px 0px rgba(0,0,0,.25);
+          -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,.25);
+          -moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,.25);
+        }
+      }
+      .page-title-action {
+        &:hover {
+          background: $electric;
+          border-color: $electric;
+          color: #fff;
+        }
+      }
       a {
         color: $electric;
         font-weight: 400;
@@ -185,10 +209,18 @@ html {
               border-left: 4px solid $electric;
             }
           }
+          &.inline-edit-row {
+            td {
+              border-bottom: 1px solid #e8e8e8;
+            }
+            .inline-edit-save {
+              padding-bottom: 20px;
+            }
+          }
         }
         th {
           text-transform: uppercase;
-          font-size: 10px;
+          font-size: $basefontsize;
           letter-spacing: 1px;
           .sorting-indicator {
             margin-top: 4px;

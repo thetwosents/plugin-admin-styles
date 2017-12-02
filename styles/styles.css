@@ -91,11 +91,33 @@ html body #adminmenuwrap {
           background: #0a213c; }
 html body #wpcontent {
   margin-left: 240px; }
+  html body #wpcontent .row-actions {
+    left: 0px !important;
+    font-size: 10px !important;
+    display: block !important; }
+  html body #wpcontent .thumbnail {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    opacity: .6; }
+    html body #wpcontent .thumbnail:hover {
+      opacity: 1;
+      box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25); }
+  html body #wpcontent .page-title-action:hover {
+    background: #4862ff;
+    border-color: #4862ff;
+    color: #fff; }
   html body #wpcontent a {
     color: #4862ff;
     font-weight: 400; }
   html body #wpcontent table tr.active th {
     border-left: 4px solid #4862ff; }
+  html body #wpcontent table tr.inline-edit-row td {
+    border-bottom: 1px solid #e8e8e8; }
+  html body #wpcontent table tr.inline-edit-row .inline-edit-save {
+    padding-bottom: 20px; }
   html body #wpcontent table th {
     text-transform: uppercase;
     font-size: 10px;
