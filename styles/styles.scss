@@ -14,6 +14,15 @@ html {
     * {
       font-family: 'Josefin Sans', sans-serif;
     }
+    .acf-fc-layout-handle {
+      background: $electric;
+      color: #fff !important;
+    }
+    .acf-field {
+      &:nth-of-type(even) {
+        background: #f9f9f9;
+      }
+    }
     #wpadminbar {
       background: $base;
       a, span, .ab-item {

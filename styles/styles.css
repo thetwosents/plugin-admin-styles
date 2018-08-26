@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700");
 html body * {
   font-family: 'Josefin Sans', sans-serif; }
+html body .acf-fc-layout-handle {
+  background: #4862ff;
+  color: #fff !important; }
+html body .acf-field:nth-of-type(even) {
+  background: #f9f9f9; }
 html body #wpadminbar {
   background: #0d274a; }
   html body #wpadminbar a, html body #wpadminbar span, html body #wpadminbar .ab-item {
